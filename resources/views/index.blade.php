@@ -9,11 +9,13 @@
 </head>
 <body>
     
-    
-
-    <div id="app">
-
+    <div class="container text-center">
+        <h2>Lista delle cartoline</h2>
+        <div id="app">
+            <postcards-list></postcards-list>
+        </div>
     </div>
+
     <script src="{{ asset('js/app.js') }}"></script>
 </body>
 </html>
