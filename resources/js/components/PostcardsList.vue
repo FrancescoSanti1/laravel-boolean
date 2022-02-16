@@ -9,7 +9,10 @@
                     </div>
 
                     <div class="card-body">
-                        {{postcard.text}}
+                        <div>{{postcard.text}}</div>
+                        <div v-if="postcard.image">
+                            <img src="" alt="Immagine della cartolina">
+                        </div>
                     </div>
                 </div>
             </div>

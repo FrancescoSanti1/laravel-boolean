@@ -8,6 +8,11 @@
     <title>Postcards Home</title>
 </head>
 <body>
+    <header>
+        <div class="container text-center">
+            <a href="{{route('postcard.new')}}" class="btn btn-success py-3 my-3">Aggiungi una nuova cartolina</a>
+        </div>
+    </header>
     
     <div class="container text-center">
         <h2>Lista delle cartoline</h2>

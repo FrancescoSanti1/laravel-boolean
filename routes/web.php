@@ -24,3 +24,6 @@ use Illuminate\Support\Facades\Route;
 Route::get('/', 'GuestController@index')->name('index');
 
 Route::get('/postcards/list', 'GuestController@postcardsList')->name('api.postcards.list');
+
+Route::get('/postcard/new', 'GuestController@addPostcard')->name('postcard.new');
+Route::post('/postcard/new/store', 'GuestController@storeNewPostcard')->name('postcard.new.store');
