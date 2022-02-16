@@ -39,6 +39,9 @@ class GuestController extends Controller
 
         $image->storeAs('/postcards/', $imageName, 'public');
 
-        return view('index');
+        $validatedData['image'] = $imageName;
+        Postcard::create($validatedData);
+
+        return redirect() -> route('index');
     }
 }

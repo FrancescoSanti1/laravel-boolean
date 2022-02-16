@@ -11,7 +11,7 @@
                     <div class="card-body">
                         <div>{{postcard.text}}</div>
                         <div v-if="postcard.image">
-                            <img src="" alt="Immagine della cartolina">
+                            <img :src="`/storage/postcards/${postcard.image}`" alt="Immagine della cartolina">
                         </div>
                     </div>
                 </div>

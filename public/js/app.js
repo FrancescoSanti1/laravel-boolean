@@ -1960,6 +1960,9 @@ __webpack_require__.r(__webpack_exports__);
 //
 //
 //
+//
+//
+//
 /* harmony default export */ __webpack_exports__["default"] = ({
   data: function data() {
     return {
@@ -37626,11 +37629,18 @@ var render = function () {
             ]),
             _vm._v(" "),
             _c("div", { staticClass: "card-body" }, [
-              _vm._v(
-                "\n                    " +
-                  _vm._s(postcard.text) +
-                  "\n                "
-              ),
+              _c("div", [_vm._v(_vm._s(postcard.text))]),
+              _vm._v(" "),
+              postcard.image
+                ? _c("div", [
+                    _c("img", {
+                      attrs: {
+                        src: "/storage/postcards/" + postcard.image,
+                        alt: "Immagine della cartolina",
+                      },
+                    }),
+                  ])
+                : _vm._e(),
             ]),
           ])
         }),
